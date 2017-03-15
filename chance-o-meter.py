@@ -79,8 +79,8 @@ mixtapeList = re.sub("[^\w]", " ",  mixtape_string).split()
 
 ## print lyrics if desired: print ("Chano Says: \n" , lyrics['Hey Ma'])
 
-## count and print for song!
-print("Chano said the word ", keyword , "...")
+## count and print!
+print("Chano said the word", keyword , mixtapeList.count(keyword), "times on the mixtape", mixtape, "!")
 print(wordList1.count(keyword), "times in the song", song1)
 print(wordList2.count(keyword), "times in the song", song2)
 print(wordList3.count(keyword), "times in the song", song3)
@@ -95,7 +95,3 @@ print(wordList11.count(keyword), "times in the song", song11)
 print(wordList12.count(keyword), "times in the song", song12)
 print(wordList13.count(keyword), "times in the song", song13)
 print(wordList14.count(keyword), "times in the song", song14)
-
-
-## count and print for mixtape!
-print(mixtapeList.count(keyword), "times on the mixtape", mixtape, "!")
