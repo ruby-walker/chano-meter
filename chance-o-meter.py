@@ -1,7 +1,7 @@
 import re
 
 ## select a keyword (user input)
-keyword = "prom"
+keyword = "time"
 
 ##Make the lyrics dictionary:
 lyrics = {'Song Title':"Lyrics"}
@@ -80,21 +80,22 @@ mixtapeList = re.sub("[^\w]", " ",  mixtape_string).split()
 ## print lyrics if desired: print ("Chano Says: \n" , lyrics['Hey Ma'])
 
 ## count and print for song!
-print("Chano said the word", keyword , wordList1.count(keyword), "times in the song", song1, "!")
-print("Chano said the word", keyword , wordList2.count(keyword), "times in the song", song2, "!")
-print("Chano said the word", keyword , wordList3.count(keyword), "times in the song", song3, "!")
-print("Chano said the word", keyword , wordList4.count(keyword), "times in the song", song4, "!")
-print("Chano said the word", keyword , wordList5.count(keyword), "times in the song", song5, "!")
-print("Chano said the word", keyword , wordList6.count(keyword), "times in the song", song6, "!")
-print("Chano said the word", keyword , wordList7.count(keyword), "times in the song", song7, "!")
-print("Chano said the word", keyword , wordList8.count(keyword), "times in the song", song8, "!")
-print("Chano said the word", keyword , wordList9.count(keyword), "times in the song", song9, "!")
-print("Chano said the word", keyword , wordList10.count(keyword), "times in the song", song10, "!")
-print("Chano said the word", keyword , wordList11.count(keyword), "times in the song", song11, "!")
-print("Chano said the word", keyword , wordList12.count(keyword), "times in the song", song12, "!")
-print("Chano said the word", keyword , wordList13.count(keyword), "times in the song", song13, "!")
-print("Chano said the word", keyword , wordList14.count(keyword), "times in the song", song14, "!")
+print("Chano said the word ", keyword , "...")
+print(wordList1.count(keyword), "times in the song", song1)
+print(wordList2.count(keyword), "times in the song", song2)
+print(wordList3.count(keyword), "times in the song", song3)
+print(wordList4.count(keyword), "times in the song", song4)
+print(wordList5.count(keyword), "times in the song", song5)
+print(wordList6.count(keyword), "times in the song", song6)
+print(wordList7.count(keyword), "times in the song", song7)
+print(wordList8.count(keyword), "times in the song", song8)
+print(wordList9.count(keyword), "times in the song", song9)
+print(wordList10.count(keyword), "times in the song", song10)
+print(wordList11.count(keyword), "times in the song", song11)
+print(wordList12.count(keyword), "times in the song", song12)
+print(wordList13.count(keyword), "times in the song", song13)
+print(wordList14.count(keyword), "times in the song", song14)
 
 
 ## count and print for mixtape!
-print("Chano said the word", keyword , mixtapeList.count(keyword), "times on the mixtape", mixtape, "!")
+print(mixtapeList.count(keyword), "times on the mixtape", mixtape, "!")
