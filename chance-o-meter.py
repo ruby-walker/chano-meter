@@ -28,15 +28,16 @@ song_files = {"14,400 Minutes": "14400minutes.txt",
 songs = {}
 for song_file in song_files:
 	fv = open(song_files[song_file])
-	songs[song_file] = "".join(fv.readlines())
+	songs[song_file] = "".join(fv.readlines()).lower()
 	fv.close()
 
 artist = "Chano"
 
 # count and print keyword count for each song
 for song in songs:
-	word_count = re.sub("[^\w]", " ",  songs[song]).split().count(keyword)
-	print("%s said the word %s %d time%s in the song %s!" % (artist, keyword, word_count, "" if (word_count == 1) else "s", song))
+	word_count = re.sub("[^\w]", " ",  songs[song]).split().count(keyword.lower())
+	if (word_count != 0):
+		print("%s said the word %s %d time%s in the song %s!" % (artist, keyword, word_count, "" if (word_count == 1) else "s", song))
 
 # create a mixtape
 mixtape_name = "10Day"
@@ -45,5 +46,5 @@ for song in songs:
 	mixtape_lyrics += songs[song]
 
 # count and print for mixtape!
-word_count = re.sub("[^\w]", " ", mixtape_lyrics).split().count(keyword)
+word_count = re.sub("[^\w]", " ", mixtape_lyrics).split().count(keyword.lower())
 print("%s said the word %s %d time%s on the mixtape %s!" % (artist, keyword , word_count, "" if (word_count == 1) else "s", mixtape_name))
