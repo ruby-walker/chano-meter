@@ -63,7 +63,7 @@ tenday_files = {"14,400 Minutes": "14400minutes.txt",
 "Fuck You Tahm Bout": "fuckyoutahmbout.txt",
 "Long Time II": "longtimeII.txt",
 "Prom Night": "promnight.txt",
-"Hey Ma": "heyma.txt"}
+"Hey Ma": "heyma.txt",}
 
 acidrap_files = { "Good Ass Intro": "goodassintro.txt",
 "Pusha Man / Paranoia": "pushamanparanoia.txt",
@@ -76,7 +76,7 @@ acidrap_files = { "Good Ass Intro": "goodassintro.txt",
 "Smoke Again": "smokeagain.txt",
 "Acid Rain": "acidrain.txt",
 "Chain Smoker": "chainsmoker.txt",
-"Everything's Good (Good Ass Outro)": "everythingsgood.txt"}
+"Everything's Good (Good Ass Outro)": "everythingsgood.txt",}
 
 coloringbook_files = {"All We Got": "allwegot.txt",
 "No Problem": "noproblem.txt",
@@ -91,7 +91,7 @@ coloringbook_files = {"All We Got": "allwegot.txt",
 "How Great": "howgreat.txt",
 "Smoke Break": "smokebreak.txt",
 "Finish Line / Drown": "finishlinedrown.txt",
-"Blessings (Reprise)": "blessingsreprise.txt"}
+"Blessings (Reprise)": "blessingsreprise.txt",}
 
 # make the songs dictionary, using the filenames dictionary
 songs = {}
@@ -115,12 +115,12 @@ for acidrap_file in acidrap_files:
 coloringbook = {}
 for coloringbook_file in coloringbook_files:
 	fv = open(coloringbook_files[coloringbook_file])
-	songs[coloringbook_file] = "".join(fv.readlines()).lower()
+	coloringbook[coloringbook_file] = "".join(fv.readlines()).lower()
 	fv.close()
 
 artist = "Chano"
 
-# create a mixtapes
+# create a mixtape
 mixtape_name1 = "10 Day"
 mixtape1_lyrics = ""
 for tenday_songs in tenday:
@@ -136,18 +136,24 @@ mixtape3_lyrics = ""
 for coloringbook_songs in coloringbook:
 	mixtape3_lyrics += coloringbook[coloringbook_songs]
 
-# count and print for mixtape!
+# count and print for mixtapes!
+print("")
+print("%s said the word %s..." % (artist, keyword))
+
 tenday_word_count = re.sub("[^\w]", " ", mixtape1_lyrics).split().count(keyword.lower())
-print("%s said the word %s %d time%s on the mixtape %s!" % (artist, keyword , tenday_word_count, "" if (tenday_word_count == 1) else "s", mixtape_name1))
+print("%d time%s on the mixtape %s!" % (tenday_word_count, "" if (tenday_word_count == 1) else "s", mixtape_name1))
 
 acidrap_word_count = re.sub("[^\w]", " ", mixtape2_lyrics).split().count(keyword.lower())
-print("%s said the word %s %d time%s on the mixtape %s!" % (artist, keyword , acidrap_word_count, "" if (acidrap_word_count == 1) else "s", mixtape_name2))
+print("%d time%s on the mixtape %s!" % (acidrap_word_count, "" if (acidrap_word_count == 1) else "s", mixtape_name2))
 
 coloringbook_word_count = re.sub("[^\w]", " ", mixtape3_lyrics).split().count(keyword.lower())
-print("%s said the word %s %d time%s on the mixtape %s!" % (artist, keyword , coloringbook_word_count, "" if (coloringbook_word_count == 1) else "s", mixtape_name3))
+print("%d time%s on the mixtape %s!" % (coloringbook_word_count, "" if (coloringbook_word_count == 1) else "s", mixtape_name3))
 
-# count and print keyword count for each song
+# count and print for each song with an occurence
+print("")
+print("%s said the word %s..." % (artist, keyword))
+
 for song in songs:
 	word_count = re.sub("[^\w]", " ",  songs[song]).split().count(keyword.lower())
 	if (word_count != 0):
-		print("%s said the word %s %d time%s in the song %s!" % (artist, keyword, word_count, "" if (word_count == 1) else "s", song))
+		print("%d time%s in the song %s!" % (word_count, "" if (word_count == 1) else "s", song))
