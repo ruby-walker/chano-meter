@@ -2,7 +2,8 @@
 import re
 
 # select a keyword (user input)
-keyword = input("Which keyword would you like to search for? ")
+print("Welcome to the Chano-Meter!")
+keyword = input("Which word would you like to search for? ")
 
 # while the keyword isn't a single word
 while len(keyword.split()) > 1:
