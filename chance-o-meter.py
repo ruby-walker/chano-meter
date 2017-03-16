@@ -2,11 +2,11 @@
 import re
 
 # select a keyword (user input)
-keyword = input("What keyword would you like to search for? ")
+keyword = input("Which keyword would you like to search for? ")
 
 # while the keyword isn't a single word
 while len(keyword.split()) > 1:
-	keyword = input("Please input a single word to search for! ")
+	keyword = input("Please submit a single word! ")
 
 # create a dictionary of song names to file names
 song_files = {"14,400 Minutes": "14400minutes.txt",
