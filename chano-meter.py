@@ -2,7 +2,7 @@
 import re
 
 # select a keyword (user input)
-print("Welcome to the Chano-Meter!")
+print("Welcome to the Chano-meter!")
 keyword = input("Which word would you like to search for? ")
 
 # while the keyword isn't a single word
@@ -68,7 +68,8 @@ tenday_files = {"14,400 Minutes": "14400minutes.txt",
 
 acidrap_files = { "Good Ass Intro": "goodassintro.txt",
 "Pusha Man / Paranoia": "pushamanparanoia.txt",
-"Cocoa Butter Kisses": "juice.txt",
+"Cocoa Butter Kisses": "cocoabutterkisses.txt",
+"Juice": "juice.txt",
 "Lost": "lost.txt",
 "Everybody's Something": "everybodyssomething.txt",
 "Interlude (That's Love)": "thatslove.txt",
