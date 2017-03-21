@@ -99,6 +99,15 @@ h2{
 	font-size: 23px
 }
 
+h5{
+	color: #F26D66;
+	margin-top: 15px;
+	text-align: justify;
+	font-size: 16px;
+	margin-left: 18%;
+	margin-right: 18%;
+}
+
 h3{
 	color: #033B6B;
 	text-align: center;
@@ -112,6 +121,23 @@ h4{
 	text-align: center;
 	font-size: 16px;
 	font-style: italic;
+}
+
+.table th, .table td { 
+     border-top: none !important; 
+	color: #033B6B;
+
+ }
+
+.table{
+	width: 75%;
+	margin: auto;
+	float: auto;
+}
+
+ol{
+	margin-left: 22%;
+	margin-right: 30%;
 }
 
 a{
