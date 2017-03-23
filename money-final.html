@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>color_scatter.py example</title>
+        
+<link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.css" type="text/css" />
+        
+<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.4.min.js"></script>
+<script type="text/javascript">
+    Bokeh.set_log_level("info");
+</script>
+        <style>
+          html {
+            width: 100%;
+            height: 100%;
+          }
+          body {
+            width: 90%;
+            height: 100%;
+            margin: auto;
+          }
+        </style>
+    </head>
+    <body>
+        
+        <div class="bk-root">
+            <div class="bk-plotdiv" id="2fb7ca9e-00a2-4400-a85c-e145fa229f16"></div>
+        </div>
+        
+        <script type="text/javascript">
+            (function() {
+          var fn = function() {
+            Bokeh.safely(function() {
+              var docs_json = {"a4dc34e9-e251-43f8-943c-c4c0abe05624":{"roots":{"references":[{"attributes":{"plot":{"id":"6eccbb96-0081-44d0-add4-46c212efb362","subtype":"Figure","type":"Plot"}},"id":"0672a035-252c-40dc-b2ee-b7e5d3dee7f5","type":"SaveTool"},{"attributes":{},"id":"482a2ed5-6192-4506-8e91-e15b90cad950","type":"ToolEvents"},{"attributes":{"plot":{"id":"6eccbb96-0081-44d0-add4-46c212efb362","subtype":"Figure","type":"Plot"}},"id":"a3c7178e-4740-44da-8a8b-20b3c7b3c80e","type":"CrosshairTool"},{"attributes":{"fill_alpha":{"value":0.9},"fill_color":{"field":"fill_color"},"line_color":{"value":null},"radius":{"field":"radius","units":"data"},"x":{"field":"x"},"y":{"field":"y"}},"id":"763f0f19-fa15-402b-b8da-5a7a68a97013","type":"Circle"},{"attributes":{"callback":null,"factors":["10 Day","Acid Rap","Coloring Book"]},"id":"668b3da6-2426-4016-9278-6e2f289c10a6","type":"FactorRange"},{"attributes":{},"id":"445c3d8a-3629-41b2-8024-7a4c2de68aa5","type":"CategoricalTickFormatter"},{"attributes":{"active_drag":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"a3c7178e-4740-44da-8a8b-20b3c7b3c80e","type":"CrosshairTool"},{"id":"0672a035-252c-40dc-b2ee-b7e5d3dee7f5","type":"SaveTool"}]},"id":"d1949bf9-2a44-4d18-944b-8d90717fdfb9","type":"Toolbar"},{"attributes":{"formatter":{"id":"cc853611-83dd-4246-98a9-e04a9604d565","type":"CategoricalTickFormatter"},"plot":{"id":"6eccbb96-0081-44d0-add4-46c212efb362","subtype":"Figure","type":"Plot"},"ticker":{"id":"5292bf0d-1afe-4078-b067-0094c1d739cd","type":"CategoricalTicker"}},"id":"be5839f3-fcfe-4772-bcb3-70fd4aab5c96","type":"CategoricalAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"radius":{"field":"radius","units":"data"},"x":{"field":"x"},"y":{"field":"y"}},"id":"e12ccb32-e610-40fe-9359-509319a1f108","type":"Circle"},{"attributes":{},"id":"cc853611-83dd-4246-98a9-e04a9604d565","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"445c3d8a-3629-41b2-8024-7a4c2de68aa5","type":"CategoricalTickFormatter"},"plot":{"id":"6eccbb96-0081-44d0-add4-46c212efb362","subtype":"Figure","type":"Plot"},"ticker":{"id":"4ad4d58f-c7ba-4f7f-86e9-f80c0858387a","type":"CategoricalTicker"}},"id":"007ae516-9524-41be-ad3a-82e574cc210d","type":"CategoricalAxis"},{"attributes":{"callback":null,"column_names":["radius","x","y","fill_color"],"data":{"fill_color":["#033B6B","#0C4777","#165384","#206091","#296C9D","#3379AA","#3D85B7","#4792C4","#599ECA","#6BAAD1","#7DB6D8","#8FC2DF","#A1CEE6","#B4DAED","#BF467B","#B7427B","#B03E7B","#A93A7C","#A2367C","#9A327D","#932F7D","#8C2B7D","#85277E","#7D237E","#761F7F","#6F1B7F","#681880","#FA416C","#F8476B","#F74D6A","#F65369","#F55A68","#F46067","#F36666","#F26D66","#F47766","#F68267","#F88D67","#FA9768","#FCA268","#FFAD69"],"radius":[0,0,0,1,0,1,0,2,1,0,1,1,0,3.0,1,2,0,0,0,0,0,0,0,1,0,1,0.0,0,1,0,0,1,0,0,0,0,2,0,0,1,0],"x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,1,2,3,4,5,6,7,8,9,10,11,12,13,1,2,3,4,5,6,7,8,9,10,11,12,13,14],"y":[1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3]}},"id":"e414b5c1-2784-4adc-9185-f689e1ea6d3b","type":"ColumnDataSource"},{"attributes":{"below":[{"id":"007ae516-9524-41be-ad3a-82e574cc210d","type":"CategoricalAxis"}],"left":[{"id":"be5839f3-fcfe-4772-bcb3-70fd4aab5c96","type":"CategoricalAxis"}],"plot_width":1000,"renderers":[{"id":"007ae516-9524-41be-ad3a-82e574cc210d","type":"CategoricalAxis"},{"id":"039149ce-8b95-4745-8df9-c6fa84f00d31","type":"Grid"},{"id":"be5839f3-fcfe-4772-bcb3-70fd4aab5c96","type":"CategoricalAxis"},{"id":"d864739c-be11-480f-a6c4-944a8dd66e8f","type":"Grid"},{"id":"18754f2f-230f-46e7-9a8c-d4315a92a837","type":"GlyphRenderer"}],"title":{"id":"78e2a245-948b-4f9f-b61d-e7090a0b79b7","type":"Title"},"tool_events":{"id":"482a2ed5-6192-4506-8e91-e15b90cad950","type":"ToolEvents"},"toolbar":{"id":"d1949bf9-2a44-4d18-944b-8d90717fdfb9","type":"Toolbar"},"x_range":{"id":"7532114b-6ec5-4985-97fc-1362264cc61e","type":"FactorRange"},"y_range":{"id":"668b3da6-2426-4016-9278-6e2f289c10a6","type":"FactorRange"}},"id":"6eccbb96-0081-44d0-add4-46c212efb362","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"4ad4d58f-c7ba-4f7f-86e9-f80c0858387a","type":"CategoricalTicker"},{"attributes":{"plot":null,"text":"Occurences of the word 'money' in Chance the Rapper Songs"},"id":"78e2a245-948b-4f9f-b61d-e7090a0b79b7","type":"Title"},{"attributes":{"dimension":1,"plot":{"id":"6eccbb96-0081-44d0-add4-46c212efb362","subtype":"Figure","type":"Plot"},"ticker":{"id":"5292bf0d-1afe-4078-b067-0094c1d739cd","type":"CategoricalTicker"}},"id":"d864739c-be11-480f-a6c4-944a8dd66e8f","type":"Grid"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"6eccbb96-0081-44d0-add4-46c212efb362","subtype":"Figure","type":"Plot"},"ticker":{"id":"4ad4d58f-c7ba-4f7f-86e9-f80c0858387a","type":"CategoricalTicker"}},"id":"039149ce-8b95-4745-8df9-c6fa84f00d31","type":"Grid"},{"attributes":{"callback":null,"factors":["Track 1","Track 2","Track 3","Track 4","Track 5","Track 6","Track 7","Track 8","Track 9","Track 10","Track 11","Track 12","Track 13","Track 14"]},"id":"7532114b-6ec5-4985-97fc-1362264cc61e","type":"FactorRange"},{"attributes":{},"id":"5292bf0d-1afe-4078-b067-0094c1d739cd","type":"CategoricalTicker"},{"attributes":{"data_source":{"id":"e414b5c1-2784-4adc-9185-f689e1ea6d3b","type":"ColumnDataSource"},"glyph":{"id":"763f0f19-fa15-402b-b8da-5a7a68a97013","type":"Circle"},"hover_glyph":null,"nonselection_glyph":{"id":"e12ccb32-e610-40fe-9359-509319a1f108","type":"Circle"},"selection_glyph":null},"id":"18754f2f-230f-46e7-9a8c-d4315a92a837","type":"GlyphRenderer"}],"root_ids":["6eccbb96-0081-44d0-add4-46c212efb362"]},"title":"Bokeh Application","version":"0.12.4"}};
+              var render_items = [{"docid":"a4dc34e9-e251-43f8-943c-c4c0abe05624","elementid":"2fb7ca9e-00a2-4400-a85c-e145fa229f16","modelid":"6eccbb96-0081-44d0-add4-46c212efb362"}];
+              
+              Bokeh.embed.embed_items(docs_json, render_items);
+            });
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+        
+        </script>
+    </body>
+</html>
